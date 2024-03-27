@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const reader = new FileReader();
 
         reader.onload = async function(event) {
-            const imageDataUrl = event.target.result;
+            const imageDataUrl = await convertToPNG(event.target.result);
 
             const response = await fetch("/runReplicate", {
                 method: "POST",
