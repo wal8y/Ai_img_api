@@ -4,8 +4,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-process.env.REPLICATE_API_TOKEN = 'r8_08feY00UFR2jvduGvjUROVghEtQ7UAh0MoeNO';
-
 const replicate = new Replicate({
   auth: process.env.REPLICATE_API_TOKEN,
   userAgent: 'https://www.npmjs.com/package/create-replicate'
