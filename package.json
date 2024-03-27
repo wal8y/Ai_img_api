@@ -1,8 +1,8 @@
 {
-  "name": "my-replicate-app",
+  "name": "Ai_img_api",
   "version": "1.0.0",
   "private": true,
-  "description": "A starter for testing out Replicate's API",
+  "description": "first build for ai api",
   "main": "index.js",
   "type": "module",
   "scripts": {
