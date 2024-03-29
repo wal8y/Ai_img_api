@@ -11,6 +11,11 @@ const replicate = new Replicate({
 
 const app = express();
 
+app.use((req, res, next) => {
+  console.log(`Request from IP: ${req.ip}`);
+  next();
+});
+
 app.use(express.static('public'));
 app.use(express.json());
 
