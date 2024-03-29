@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI images</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<a href="https://github.com/wal8y">by wal8y</a>
+<body>
+  <div class="container">
+    <h1>playground</h1>
+    <main class="hq">
+      <div>
+        <label for="imageInput">Image:</label>
+        <input type="file" id="imageInput" accept="image/*">
+      </div>
+      <div>
+        <label for="prompt">Prompt:</label>
+        <input type="text" id="prompt">
+      </div>
+      <div>
+        <label for="style">Style:</label>
+        <select id="style" class="w-full border p-2 border-black disabled:cursor-not-allowed disabled:opacity-50" name="style">
+          <option value="3D">3D</option>
+          <option value="Emoji">Emoji</option>
+          <option value="Video game">Video game</option>
+          <option value="Pixels">Pixels</option>
+          <option value="Clay">Clay</option>
+          <option value="Toy">Toy</option>
+        </select>
+      </div>
+      <div>
+        <label for="denoisingStrength">Denoising Strength:</label>
+        <input type="range" id="denoisingStrength" min="0" max="1" step="0.01" value="0.65">
+        <span id="denoisingStrengthValue">0.65</span>
+      </div>
+      <div>
+        <label for="promptStrength">Prompt Strength:</label>
+        <input type="range" id="promptStrength" min="0" max="20" step="0.1" value="4.5">
+        <span id="promptStrengthValue">4.5</span>
+      </div>
+      <div>
+        <label for="controlDepthStrength">Control Depth Strength:</label>
+        <input type="range" id="controlDepthStrength" min="0" max="1" step="0.01" value="0.8">
+        <span id="controlDepthStrengthValue">0.8</span>
+      </div>
+      <div>
+        <label for="instantIdStrength">Instant ID Strength:</label>
+        <input type="range" id="instantIdStrength" min="0" max="1" step="0.01" value="0.8">
+        <span id="instantIdStrengthValue">0.8</span>
+      </div>
+      <div>
+        <button id="runButton">Run</button>
+      </div>
+    </main>                       
+    <div id="output"></div>
+  </div>
+  <script src="s.js"></script>
+</body>
+</html>
