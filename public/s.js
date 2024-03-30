@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const promptStrength = parseFloat(promptStrengthInput.value);
         const controlDepthStrength = parseFloat(controlDepthStrengthInput.value);
         const instantIdStrength = parseFloat(instantIdStrengthInput.value);
-        outputDiv.innerHTML = '<img src="ZKZg.gif" alt="Image">';
+        outputDiv.innerHTML = 'loading... (takes about 20sec)';
 
         const file = imageInput.files[0];
         const reader = new FileReader();
