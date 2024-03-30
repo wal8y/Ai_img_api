@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const outputDiv = document.getElementById("output");
     const imageInput = document.getElementById("imageInput");
     runButton.addEventListener("click", async () => {
-        outputDiv.innerHTML = '<img src="ZKZg.gif" alt="Image">';
+        outputDiv.innerHTML = 'loading... (takes around 20sec)';
 
         const file = imageInput.files[0];
         const reader = new FileReader();
