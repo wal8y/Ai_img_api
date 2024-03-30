@@ -12,7 +12,8 @@ const replicate = new Replicate({
 const app = express();
 
 app.use((req, res, next) => {
-  console.log(`Request from IP: ${req.ip}`);
+  const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  console.log(`Request from IP: ${ip}`);
   next();
 });
 
