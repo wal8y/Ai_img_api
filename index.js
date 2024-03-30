@@ -24,6 +24,7 @@ app.post('/runReplicate', async (req, res) => {
   try {
     const { model, input } = req.body;
     const output = await replicate.run(model, { input });
+    console.log(`Response link: ${output[0]}`);
     res.json(output);
   } catch (error) {
     console.error(error);
